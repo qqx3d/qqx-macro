@@ -1,0 +1,19 @@
+[package]
+name = "qqx-macro"
+version = "0.0.1"
+authors = ["Roman <qqx.3d.rs@gmail.com>"]
+edition = "2018"
+license = "GPL-3.0"
+description = "Helper crate to improve user experience while using qqx"
+repository = "https://github.com/qqx3d/qqx-macro"
+readme = "README.md"
+homepage = "https://qqx3d.github.io"
+documentation = "https://docs.rs/qqx-macro"
+exclude = [".gitignore"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "1.0.57", features = ["full", "fold"] }
+quote = "1.0.8"
