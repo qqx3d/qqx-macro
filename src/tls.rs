@@ -28,3 +28,9 @@ pub fn trim(mut x: String) -> String {
     x.retain(|c| !c.is_whitespace());
     x
 }
+
+pub fn mix_colors(lhs: String, rhs: String) -> String {
+    if lhs.is_empty() { rhs }
+    else if rhs.is_empty() { lhs }
+    else { format!("mix({a}, vec4({b}.xyz, 1.0), {a}.w)", a = rhs, b = lhs) }
+}

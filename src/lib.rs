@@ -1,3 +1,6 @@
+#![feature(in_band_lifetimes)]
+#![feature(const_panic)]
+
 mod polygon;
 mod callback;
 mod tls;
