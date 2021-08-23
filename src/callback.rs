@@ -9,6 +9,5 @@ pub fn callback(name: String, function: TokenStream) -> TokenStream {
             qqx::callback::".to_string() + name.as_str() + "(" + &function[(function.find("fn").expect(ERR) + 3)..function.find('(').expect(ERR)] + ")
         }
     }").as_str());
-    println!("{}", function);
     function.parse().unwrap()
 }

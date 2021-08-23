@@ -1,6 +1,6 @@
 [package]
 name = "qqx-macro"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Roman <qqx.3d.rs@gmail.com>"]
 edition = "2018"
 license = "GPL-3.0"

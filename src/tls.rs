@@ -22,3 +22,9 @@ pub fn take(t: &String, pat: &str) -> Option <String> {
 
     Some((&t[idx..t.rfind(&pat[idx + 2..idx + 3])?]).to_string())
 }
+
+#[inline]
+pub fn trim(mut x: String) -> String {
+    x.retain(|c| !c.is_whitespace());
+    x
+}
